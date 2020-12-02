@@ -16,7 +16,9 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1606377868008_4639';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = [
+    
+  ];
 
   // add your user config here
   const userConfig = {
@@ -50,7 +52,7 @@ module.exports = appInfo => {
     domainWhiteList: ['*']
   };
   config.cors = {
-    origin: '*',
+    // origin: '*',
     credentials: true,  // 允许Cook可以跨域
     origin: 'http://localhost:3000', //只允许这个域进行访问接口
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
